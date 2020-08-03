@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head with meta tag.  -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Need meta tag with name, and content attribute to  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- This is the Bootsrap CSS. also needs jquery, popper, and bootstrap files after the footer. -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <title>Week1 and Week2 exercise with notes.</title>
+</head>
+
+<!-- Body  -->
+<body>
+    <!-- Jumbotron component is used to call extral attention to a section of the page that shows key messages -->
+    <header class="Jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>NuCamp</h1>
+                    <h2>a better way to camp</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Row#1 -->
+        <div class="row">
+            <!-- column#1 Want this colum in this row to take 4 column when the viewport is small and take 3 colum when the viewport is medium and up. order-* classes allow you to reorder specific columns in a row without actually changing the order in the code. Here, I use order-sm-last to change the order of the column when viewport size is sm and up, moving the heading (h2) to last column -->
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <h2>Discover & Review</h2>
+            </div>
+            <!-- Column #2 Added another div to "our campsites. Want column to take what's left in the row but fixed "  -->
+            <div class="col">
+                <h3>Our Campsites</h3>
+                <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+            </div>
+        </div>
+        <!-- Row #2 -->
+        <div class="row">
+            <!-- Row#2, Column #1 Do the same as above to keep the column uniform based on screen size -->
+
+            <div class="col-sm-4 order-sm-last col-md-3">
+                <h2>Featured Campsites</h2>
+            </div>
+            <!-- Row#2, column #2 -->
+            <div class="col">
+                <h3>React Lake Campground</h3>
+                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React
+                    Lake is
+                    a favorite for fly fishers.</p>
+            </div>
+        </div>
+        <!-- Row#3 -->
+        <div class="row">
+            <!-- Row#3 column#1 -->
+            <div class="col-sm-4 col-md-3">
+                <h2>Our Community Partners</h2>
+            </div>
+            <!-- Row#3 column#2 -->
+            <div class="col">
+                <h3>Bootstrap Outfitters</h3>
+                <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer div class will now have a new container for all the footer contents. -->
+    <!-- Three column that are wrapped inside single Bootstrap row div, which is in turn inside a single
+    container div. -->
+    <footer>
+        <div class="container">
+            <!-- Row# 4 -->
+            <div class="row">
+                <!-- Row#4 column #1 -->
+                <!-- offset-* class force a Bootsrap column in a grid to the right by a specified number to the right by a specified number of column (out of 12) -->
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <!-- list-unstyled remove the bullet point from list item(li) -->
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Row#4 column#2 -->
+                <div class="col-6 col-sm-5">
+                    <h5>Social</h5>
+                    <a href="http://instagram.com/">Instagram</a>
+                    <a href="http://facebook.com/">Facebook</a>
+                    <a href="http://twitter.com/">Twitter</a>
+                    <a href="http://youtube.com/">YouTube</a>
+                </div>
+                <div class="col-sm-4">
+                    Tel: 1-206-555-1234<br />
+                    Email: campsites@nucamp.co
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
